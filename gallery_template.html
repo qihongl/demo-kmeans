@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>K-means teaching examples</title>
+<style>
+body{font:18px/1.5 system-ui,sans-serif;color:#18232c;margin:36px auto;max-width:1650px;padding:0 24px;background:#fff}
+h1{font-size:34px;margin-bottom:8px}h2{font-size:25px;margin:0}.intro{max-width:1050px}section{border-top:1px solid #ddd;margin-top:30px;padding-top:24px}.row-heading{display:flex;align-items:center;gap:20px;flex-wrap:wrap}.badge{font-size:13px;color:#52606a;background:#f0f3f5;padding:5px 10px;border-radius:4px}
+.panels{display:flex;gap:20px;overflow-x:auto;padding-bottom:8px}figure{flex:1;min-width:290px;margin:0}img{width:100%;height:auto}figcaption{font-size:15px;color:#52606a}.actions{display:flex;align-items:center;gap:10px 14px;flex-wrap:wrap;font-size:14px;margin-top:10px}a{color:#006eae}button{font:600 14px system-ui,sans-serif;background:#006eae;color:white;border:0;border-radius:6px;padding:10px 14px;cursor:pointer}button:hover{background:#005589}button:focus-visible,a:focus-visible{outline:3px solid #e69f00;outline-offset:3px}button:disabled{opacity:.65;cursor:wait}.copy-status{font-size:13px;min-height:40px;margin:8px 0;color:#52606a}.copy-status[data-state="success"]{color:#14603f}.copy-status[data-state="error"]{color:#9a3412}.metrics,details,.small{font-size:14px;color:#52606a}summary{cursor:pointer}footer{margin:32px 0} @media(max-width:650px){body{padding:0 12px}.panels{gap:12px}}
+</style></head><body>
+<h1>When k-means works—and what it can miss</h1>
+<div class="intro"><p>15 reproducible examples, including all five distinct cases in your supplied slides. Every row shows the same observations: <strong>generating groups → unlabelled input → k-means assignments</strong>.</p>
+<p>All stages remain visible for review; download or copy individual figures to build your slide reveals. Each PNG is 1290 × 1050 pixels (300 DPI). Scroll rows horizontally on smaller screens.</p>
+<p class="small">Ground truth is used only for the left panel, evaluation, and matching display colors after fitting. It is never supplied to k-means. Cluster names are arbitrary. Black × marks are fitted centers. Within each row, coordinates and equal axis scales match exactly. These are synthetic illustrations, not digitizations of slide points.</p>
+<p class="small">ARI and Rand index compare pairs of observations. The first five rows reproduce the slide examples qualitatively. Added cases are labeled below. Standard fits use k-means++ with 50 starts; the initialization demonstration deliberately uses one poor start.</p></div>
+__ROWS__
+<footer class="small"><a href="README.md">README</a> · <a href="SOURCE_NOTES.md">Slide mapping and interpretation</a> · <a href="metrics.csv">All metrics</a> · <a href="generate_examples.py">Reproduction script</a></footer>
+<script type="application/json" id="clipboard-assets">__ASSETS__</script><script>__SCRIPT__</script>
+</body></html>

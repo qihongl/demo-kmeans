@@ -1,0 +1,697 @@
+[
+  {
+    "key": "separated_round",
+    "title": "Separated round groups",
+    "k": 2,
+    "lesson": "A favorable case: similarly sized, compact groups are well separated. A nearby mean is a useful summary of each group.",
+    "source": "PDF pages 1\u20133 \u00b7 slide 11",
+    "ari": 1.0,
+    "ri": 1.0,
+    "n": 160,
+    "counts": {
+      "0": 80,
+      "1": 80
+    },
+    "inertia": 56.046552655481676,
+    "iterations": 2,
+    "centers": [
+      [
+        -2.4861044205897005,
+        0.03247301471865029
+      ],
+      [
+        2.450171220487348,
+        0.08207180852145851
+      ]
+    ],
+    "n_init": 50,
+    "initialization": "k-means++",
+    "color_mapping": {
+      "0": 0,
+      "1": 1
+    },
+    "scored_points": 160,
+    "axis_limits": [
+      [
+        -4.748851659600557,
+        4.113833606487702
+      ],
+      [
+        -4.265270548184065,
+        4.597414717904194
+      ]
+    ]
+  },
+  {
+    "key": "unequal_spread",
+    "title": "Unequal spread",
+    "k": 2,
+    "lesson": "Both groups contain 90 observations, but one is much more diffuse. The nearest-center boundary gives some diffuse-group points to the compact group. Equal spread is helpful, not a formal requirement.",
+    "source": "PDF pages 4\u20135 \u00b7 slide 12",
+    "ari": 0.9340765663135686,
+    "ri": 0.9670391061452513,
+    "n": 180,
+    "counts": {
+      "0": 90,
+      "1": 90
+    },
+    "inertia": 266.45692366188445,
+    "iterations": 5,
+    "centers": [
+      [
+        -1.9451856196133332,
+        -0.012563910959552331
+      ],
+      [
+        1.9869755966296676,
+        0.06614639264855408
+      ]
+    ],
+    "n_init": 50,
+    "initialization": "k-means++",
+    "color_mapping": {
+      "0": 0,
+      "1": 1
+    },
+    "scored_points": 180,
+    "axis_limits": [
+      [
+        -3.1880520834781856,
+        5.879804114654712
+      ],
+      [
+        -4.69074400828711,
+        4.377112189845787
+      ]
+    ]
+  },
+  {
+    "key": "unequal_counts",
+    "title": "Unequal group sizes",
+    "k": 2,
+    "lesson": "The generating groups have the same population spread but 10 versus 300 observations. K-means can reduce total squared error by splitting the large group and grouping the small population with part of it.",
+    "source": "PDF pages 6\u20137 \u00b7 slide 13",
+    "ari": 0.01556355533076964,
+    "ri": 0.509426871280927,
+    "n": 310,
+    "counts": {
+      "0": 10,
+      "1": 300
+    },
+    "inertia": 659.8088040442731,
+    "iterations": 27,
+    "centers": [
+      [
+        3.5060086043521377,
+        0.2732273650592803
+      ],
+      [
+        1.4254199705009885,
+        -0.24824324590957128
+      ]
+    ],
+    "n_init": 50,
+    "initialization": "k-means++",
+    "color_mapping": {
+      "0": 1,
+      "1": 0
+    },
+    "scored_points": 310,
+    "axis_limits": [
+      [
+        -5.148784559710723,
+        6.773523282549178
+      ],
+      [
+        -5.870652258312436,
+        6.051655583947465
+      ]
+    ]
+  },
+  {
+    "key": "elongated_groups",
+    "title": "Long, narrow groups",
+    "k": 2,
+    "lesson": "The generating groups are the left and right columns. Their large vertical spread makes a top-versus-bottom partition cheaper in squared distance. K-means does not identify groups from their shape alone.",
+    "source": "PDF pages 8\u20139 \u00b7 slide 14",
+    "ari": 0.009459865273209092,
+    "ri": 0.5047175667287399,
+    "n": 180,
+    "counts": {
+      "0": 90,
+      "1": 90
+    },
+    "inertia": 881.2467298715475,
+    "iterations": 7,
+    "centers": [
+      [
+        -0.18972233145158252,
+        2.6402669490982653
+      ],
+      [
+        0.1451846614845172,
+        -2.0789812321875485
+      ]
+    ],
+    "n_init": 50,
+    "initialization": "k-means++",
+    "color_mapping": {
+      "0": 0,
+      "1": 1
+    },
+    "scored_points": 180,
+    "axis_limits": [
+      [
+        -10.317957149600598,
+        10.437657809372965
+      ],
+      [
+        -11.5665724644749,
+        9.189042494498663
+      ]
+    ]
+  },
+  {
+    "key": "overlapping_groups",
+    "title": "Overlapping groups",
+    "k": 2,
+    "lesson": "The generating populations overlap. The algorithm creates a hard nearest-center boundary, but nearby observations can have different hidden origins. Even a sensible geometric split cannot perfectly recover those labels.",
+    "source": "PDF pages 10\u201312 \u00b7 slide 15",
+    "ari": 0.4120646369373743,
+    "ri": 0.7060211049037864,
+    "n": 180,
+    "counts": {
+      "0": 90,
+      "1": 90
+    },
+    "inertia": 162.76384665499324,
+    "iterations": 10,
+    "centers": [
+      [
+        -0.7844495578558677,
+        -0.0011608797216822453
+      ],
+      [
+        0.8425295786456812,
+        0.1323460211764243
+      ]
+    ],
+    "n_init": 50,
+    "initialization": "k-means++",
+    "color_mapping": {
+      "0": 0,
+      "1": 1
+    },
+    "scored_points": 180,
+    "axis_limits": [
+      [
+        -3.914815711859288,
+        2.6634701690618394
+      ],
+      [
+        -3.596119342358496,
+        2.9821665385626313
+      ]
+    ]
+  },
+  {
+    "key": "two_moons",
+    "title": "Two interlocking moons",
+    "k": 2,
+    "lesson": "Two curved groups are easy to follow by eye. With two centers, k-means uses a straight dividing boundary and cuts across the moons.",
+    "source": null,
+    "ari": 0.2570842003051741,
+    "ri": 0.6285536933581626,
+    "n": 180,
+    "counts": {
+      "0": 90,
+      "1": 90
+    },
+    "inertia": 73.08122402968877,
+    "iterations": 7,
+    "centers": [
+      [
+        1.2022685235888966,
+        -0.0793172022816811
+      ],
+      [
+        -0.19846500103500953,
+        0.5750280197382729
+      ]
+    ],
+    "n_init": 50,
+    "initialization": "k-means++",
+    "color_mapping": {
+      "0": 1,
+      "1": 0
+    },
+    "scored_points": 180,
+    "axis_limits": [
+      [
+        -1.3779175525320513,
+        2.4156275660384665
+      ],
+      [
+        -1.6174332912489056,
+        2.1761118273216122
+      ]
+    ]
+  },
+  {
+    "key": "nested_rings",
+    "title": "Nested rings",
+    "k": 2,
+    "lesson": "The hidden groups are the inner and outer rings. K-means divides space into nearest-center regions, so it cuts across both rings instead of separating inside from outside.",
+    "source": null,
+    "ari": -0.005493129773110159,
+    "ri": 0.4972687771570453,
+    "n": 180,
+    "counts": {
+      "0": 90,
+      "1": 90
+    },
+    "inertia": 69.25779309488527,
+    "iterations": 7,
+    "centers": [
+      [
+        0.24829595395201928,
+        0.37952523635890417
+      ],
+      [
+        -0.2568473561791411,
+        -0.3901573351078603
+      ]
+    ],
+    "n_init": 50,
+    "initialization": "k-means++",
+    "color_mapping": {
+      "0": 1,
+      "1": 0
+    },
+    "scored_points": 180,
+    "axis_limits": [
+      [
+        -1.2430357032757426,
+        1.2391715350436836
+      ],
+      [
+        -1.2437303207495771,
+        1.2384769175698491
+      ]
+    ]
+  },
+  {
+    "key": "too_few_clusters",
+    "title": "Choosing k: too few",
+    "k": 2,
+    "lesson": "These data were generated from three compact groups. Asking for two clusters forces k-means to merge two of them.",
+    "source": null,
+    "ari": 0.5686746987951807,
+    "ri": 0.776536312849162,
+    "n": 180,
+    "counts": {
+      "0": 60,
+      "1": 60,
+      "2": 60
+    },
+    "inertia": 933.9167815451166,
+    "iterations": 2,
+    "centers": [
+      [
+        3.028127606282413,
+        -1.5512964545069414
+      ],
+      [
+        -1.4880668262308057,
+        0.7944944240154251
+      ]
+    ],
+    "n_init": 50,
+    "initialization": "k-means++",
+    "color_mapping": {
+      "0": 2,
+      "1": 0
+    },
+    "scored_points": 180,
+    "axis_limits": [
+      [
+        -4.5069512672460865,
+        4.841578746133668
+      ],
+      [
+        -3.9942947981698103,
+        5.354235215209944
+      ]
+    ]
+  },
+  {
+    "key": "matching_k",
+    "title": "Choosing k: a good match",
+    "k": 3,
+    "lesson": "The same points with k=3: one center per generating group. This is the reference for the k=2, k=4, and poor-initialization examples.",
+    "source": null,
+    "ari": 1.0,
+    "ri": 1.0,
+    "n": 180,
+    "counts": {
+      "0": 60,
+      "1": 60,
+      "2": 60
+    },
+    "inertia": 49.401109512442154,
+    "iterations": 2,
+    "centers": [
+      [
+        0.0012248940067143173,
+        3.0645107467844017
+      ],
+      [
+        -2.977358546468324,
+        -1.475521898753552
+      ],
+      [
+        3.028127606282413,
+        -1.5512964545069414
+      ]
+    ],
+    "n_init": 50,
+    "initialization": "k-means++",
+    "color_mapping": {
+      "0": 1,
+      "1": 0,
+      "2": 2
+    },
+    "scored_points": 180,
+    "axis_limits": [
+      [
+        -4.5069512672460865,
+        4.841578746133668
+      ],
+      [
+        -3.9942947981698103,
+        5.354235215209944
+      ]
+    ]
+  },
+  {
+    "key": "too_many_clusters",
+    "title": "Choosing k: too many",
+    "k": 4,
+    "lesson": "The same points with k=4: one generating group is split. Extra centers reduce squared error, so a lower objective alone does not establish the right number of groups.",
+    "source": null,
+    "ari": 0.8831592689295039,
+    "ri": 0.9503414028553694,
+    "n": 180,
+    "counts": {
+      "0": 60,
+      "1": 60,
+      "2": 60
+    },
+    "inertia": 42.61430202469486,
+    "iterations": 5,
+    "centers": [
+      [
+        2.8213553857392295,
+        -1.4338146351636831
+      ],
+      [
+        -2.977358546468324,
+        -1.475521898753552
+      ],
+      [
+        0.0012248940067143173,
+        3.0645107467844017
+      ],
+      [
+        3.441672047368779,
+        -1.7862600931934585
+      ]
+    ],
+    "n_init": 50,
+    "initialization": "k-means++",
+    "color_mapping": {
+      "0": 2,
+      "1": 0,
+      "2": 1,
+      "3": 3
+    },
+    "scored_points": 180,
+    "axis_limits": [
+      [
+        -4.5069512672460865,
+        4.841578746133668
+      ],
+      [
+        -3.9942947981698103,
+        5.354235215209944
+      ]
+    ]
+  },
+  {
+    "key": "poor_initialization",
+    "title": "A poor initialization",
+    "k": 3,
+    "lesson": "The same three-group dataset, but a deliberately poor starting arrangement and only one run. Two centers stay in one group while one center serves the other two. Compare the objective with the multi-start k=3 result above; multiple starts help, but do not guarantee a global optimum.",
+    "source": null,
+    "ari": 0.44042327439390033,
+    "ri": 0.7207324643078833,
+    "n": 180,
+    "counts": {
+      "0": 60,
+      "1": 60,
+      "2": 60
+    },
+    "inertia": 957.106430389324,
+    "iterations": 8,
+    "centers": [
+      [
+        -2.7548059362638257,
+        -1.697221793568347
+      ],
+      [
+        -3.215259612548995,
+        -1.2385323560204966
+      ],
+      [
+        1.5146762501445639,
+        0.7566071461387306
+      ]
+    ],
+    "n_init": 1,
+    "initialization": [
+      [
+        -3.0,
+        -1.8
+      ],
+      [
+        -3.0,
+        -1.2
+      ],
+      [
+        1.5,
+        0.75
+      ]
+    ],
+    "color_mapping": {
+      "0": 0,
+      "1": 1,
+      "2": 2
+    },
+    "scored_points": 180,
+    "axis_limits": [
+      [
+        -4.5069512672460865,
+        4.841578746133668
+      ],
+      [
+        -3.9942947981698103,
+        5.354235215209944
+      ]
+    ]
+  },
+  {
+    "key": "feature_scale_raw",
+    "title": "Feature scaling: original units",
+    "k": 2,
+    "lesson": "The groups differ in feature 1, but feature 2 has a much larger numerical range. Raw Euclidean distances are dominated by feature 2, so k-means splits along that variation.",
+    "source": null,
+    "ari": -0.007246376811594203,
+    "ri": 0.49640287769784175,
+    "n": 140,
+    "counts": {
+      "0": 70,
+      "1": 70
+    },
+    "inertia": 688.979859230584,
+    "iterations": 3,
+    "centers": [
+      [
+        -0.0030007186895693438,
+        3.0434782608695654
+      ],
+      [
+        0.020345093418741404,
+        -3.0434782608695654
+      ]
+    ],
+    "n_init": 50,
+    "initialization": "k-means++",
+    "color_mapping": {
+      "0": 0,
+      "1": 1
+    },
+    "scored_points": 140,
+    "axis_limits": [
+      [
+        -7.157396296955943,
+        7.242603703044056
+      ],
+      [
+        -7.199999999999999,
+        7.199999999999999
+      ]
+    ]
+  },
+  {
+    "key": "feature_scale_standardized",
+    "title": "Feature scaling: standardized",
+    "k": 2,
+    "lesson": "The same observations after standardizing each feature to unit variance. All three panels show standardized coordinates, exactly as supplied to k-means. Scaling recovers the generating groups here; it changes the question and is not universally the right choice.",
+    "source": null,
+    "ari": 1.0,
+    "ri": 1.0,
+    "n": 140,
+    "counts": {
+      "0": 70,
+      "1": 70
+    },
+    "inertia": 141.05626233587526,
+    "iterations": 2,
+    "centers": [
+      [
+        -0.9962204921750318,
+        0.0
+      ],
+      [
+        0.9962204921750324,
+        0.0
+      ]
+    ],
+    "n_init": 50,
+    "initialization": "k-means++",
+    "color_mapping": {
+      "0": 0,
+      "1": 1
+    },
+    "scored_points": 140,
+    "axis_limits": [
+      [
+        -2.0239382993704362,
+        2.074017219741469
+      ],
+      [
+        -2.0489777595559526,
+        2.0489777595559526
+      ]
+    ],
+    "scaler_mean": [
+      0.008672187364585847,
+      -1.6494742080145183e-16
+    ],
+    "scaler_scale": [
+      1.3551216930426384,
+      3.513947365422043
+    ]
+  },
+  {
+    "key": "distant_outlier",
+    "title": "One distant outlier",
+    "k": 2,
+    "lesson": "The grey point is a designated outlier, not a third generating group. K-means has no reject option: it uses one of the two centers for that point and merges the two main groups. The reported agreement scores exclude the outlier; the fit includes it.",
+    "source": null,
+    "ari": 0.0,
+    "ri": 0.4957983193277311,
+    "n": 121,
+    "counts": {
+      "-1": 1,
+      "0": 60,
+      "1": 60
+    },
+    "inertia": 524.8671670173062,
+    "iterations": 2,
+    "centers": [
+      [
+        -0.017672516457510015,
+        -0.017097684198356666
+      ],
+      [
+        0.0,
+        25.0
+      ]
+    ],
+    "n_init": 50,
+    "initialization": "k-means++",
+    "color_mapping": {
+      "0": 0,
+      "1": 1
+    },
+    "scored_points": 120,
+    "axis_limits": [
+      [
+        -15.415440711941521,
+        15.716486477371106
+      ],
+      [
+        -3.5375999235365754,
+        27.59432726577605
+      ]
+    ]
+  },
+  {
+    "key": "single_population",
+    "title": "Clusters without separate populations",
+    "k": 3,
+    "lesson": "All observations come from one Gaussian population. K-means still returns three groups when asked. Colored partitions alone are not evidence for distinct underlying populations.",
+    "source": null,
+    "ari": 0.0,
+    "ri": 0.33584905660377357,
+    "n": 160,
+    "counts": {
+      "0": 160
+    },
+    "inertia": 152.66371688756306,
+    "iterations": 14,
+    "centers": [
+      [
+        0.31321967381825777,
+        -0.9679307631873509
+      ],
+      [
+        0.7435386898192922,
+        0.8334363322223626
+      ],
+      [
+        -1.3032505742533347,
+        -0.05603001531125519
+      ]
+    ],
+    "n_init": 50,
+    "initialization": "k-means++",
+    "color_mapping": {
+      "1": 0,
+      "0": 1,
+      "2": 2
+    },
+    "scored_points": 160,
+    "axis_limits": [
+      [
+        -3.5369588592660257,
+        3.7047825241020202
+      ],
+      [
+        -2.8893940209688465,
+        4.3523473623991995
+      ]
+    ]
+  }
+]
